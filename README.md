@@ -1,6 +1,6 @@
 # Mini_Python_Projects
 
-# Project 1: FinTrack Pro
+## Project 1: FinTrack Pro
 FinTrack Pro is a powerful and user-friendly personal finance management tool designed to help you effortlessly track, analyze, and visualize your financial transactions. Whether you're managing your daily expenses or monitoring your income, FinTrack Pro makes it easy to keep your finances in check.
 
 Key Features:
@@ -12,7 +12,7 @@ Flexible Date Handling: Specify any date range to analyze transactions and see s
 Whether you're tracking monthly budgets or analyzing long-term spending, FinTrack Pro offers a clear and intuitive way to manage your finances and make informed decisions about your money.
 
 
-# Project 2: Ultimate Temperature Converter
+## Project 2: Ultimate Temperature Converter
 Introduction:
 Welcome to the Ultimate Temperature Converter, the comprehensive tool designed to make temperature conversions simple and efficient. Whether you're a student, a professional, or just someone in need of quick temperature conversions, this tool is here to help. With a user-friendly interface and vibrant color coding, our converter ensures a seamless experience from start to finish.
 
@@ -33,3 +33,19 @@ Whether you’re dealing with scientific data, cooking recipes, or everyday temp
 
 
  
+## Project 3: Universal Weight Converter
+
+Description:
+The Universal Weight Converter is a versatile and user-friendly Python application designed to convert between various units of weight. This project offers both single and batch conversion modes, enabling users to seamlessly convert weights between grams, kilograms, pounds, and ounces.
+
+Key Features:
+   -- Single Weight Conversion: Allows users to convert individual weights between grams, kilograms, pounds, and ounces with ease.
+   -- Batch Weight Conversion: Supports the conversion of multiple weights at once, facilitating bulk operations for users.
+   -- User-Friendly Interface: Interactive command-line interface with clear prompts and colorful outputs for a pleasant user experience.
+   -- Error Handling: Robust input validation ensures that users receive accurate results by preventing invalid inputs.
+
+Supported Conversions:
+1. Grams (g) to Kilograms (kg) and vice versa
+2. Pounds (lb) to Kilograms (kg) and vice versa
+3. Ounces (oz) to Grams (g) and vice versa
+4. Pounds (lb) to Ounces (oz) and vice versa
