@@ -105,6 +105,6 @@ Password after adding salt: 2jsa2aNVa7hBeV0NVaD1Bka8!$za2a2qB1.AlauA7cHOFI
 
 **Decryption Example**:
 
-Enter hashed value to Decrypt: 2jsa2aNVa7hBeV0NVaD1Bka8!$za2a2qB1.AlauA7cHOFI
-Password after removing salt: eV0!$z
-Decrypted password: abc456
+step 1: Enter hashed value to Decrypt: 2jsa2aNVa7hBeV0NVaD1Bka8!$za2a2qB1.AlauA7cHOFI
+step 1: Password after removing salt: eV0!$z
+step 1: Decrypted password: abc456
