@@ -67,21 +67,25 @@ This repository contains a Python-based system for encrypting and decrypting pas
 
 #### `salts()`
 **Purpose**: Generates a list of salt values used to obfuscate encrypted passwords.
+
 **Returns**: 
 - A list of strings, each representing a salt value.
 
 #### `characters()`
 **Purpose**: Provides a list of all possible characters that can be used in passwords.
+
 **Returns**: 
 - A list of characters including digits, letters, and punctuation.
 
 #### `chars_keys()`
 **Purpose**: Provides a list of keys corresponding to the characters defined in `characters()`.
+
 **Returns**: 
 - A list of keys.
 
 #### `encrypter()`
 **Purpose**: Encrypts a user-provided password using a defined character set and adds salt to the encrypted password.
+
 Process:
 1. Prompts user to enter a password to encrypt.
 2. Encrypts the password using character mapping.
@@ -89,7 +93,9 @@ Process:
 
 #### `decrypter()`
 **Purpose**: Decrypts a user-provided hashed value by removing salt and reversing the encryption process.
+
 Process:
+
 1. Prompts user to enter a hashed password.
 2. Removes salt from the hashed password.
 3. Decrypts the resulting string.
@@ -98,13 +104,17 @@ Process:
 
 **Encryption Example**:
  
- Enter password to encrypt: abc456
- Encrypted password: eV0!$z
- Password after adding salt: 2jsa2aNVa7hBeV0NVaD1Bka8!$za2a2qB1.AlauA7cHOFI
+ step 1: Enter password to encrypt: abc456
+ 
+ step 2: Encrypted password: eV0!$z
+ 
+ step 3: Password after adding salt: 2jsa2aNVa7hBeV0NVaD1Bka8!$za2a2qB1.AlauA7cHOFI
 
 
 **Decryption Example**:
 
 step 1: Enter hashed value to Decrypt: 2jsa2aNVa7hBeV0NVaD1Bka8!$za2a2qB1.AlauA7cHOFI
-step 1: Password after removing salt: eV0!$z
-step 1: Decrypted password: abc456
+
+step 2: Password after removing salt: eV0!$z
+
+step 3: Decrypted password: abc456
