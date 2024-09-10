@@ -97,10 +97,10 @@ Process:
 ## Example
 
 **Encryption Example**:
-
-Enter password to encrypt: abc456
-Encrypted password: eV0!$z
-Password after adding salt: 2jsa2aNVa7hBeV0NVaD1Bka8!$za2a2qB1.AlauA7cHOFI
+ 
+ Enter password to encrypt: abc456
+ Encrypted password: eV0!$z
+ Password after adding salt: 2jsa2aNVa7hBeV0NVaD1Bka8!$za2a2qB1.AlauA7cHOFI
 
 
 **Decryption Example**:
