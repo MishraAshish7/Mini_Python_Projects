@@ -44,8 +44,67 @@ Key Features:
    -- User-Friendly Interface: Interactive command-line interface with clear prompts and colorful outputs for a pleasant user experience.
    -- Error Handling: Robust input validation ensures that users receive accurate results by preventing invalid inputs.
 
+
 Supported Conversions:
 1. Grams (g) to Kilograms (kg) and vice versa
 2. Pounds (lb) to Kilograms (kg) and vice versa
 3. Ounces (oz) to Grams (g) and vice versa
 4. Pounds (lb) to Ounces (oz) and vice versa
+
+
+
+## Project 4: Password Encryption and Decryption System
+
+### Overview:
+This repository contains a Python-based system for encrypting and decrypting passwords. The system uses custom salts and a character mapping approach to ensure secure encryption. It also includes functionality for decrypting the encrypted passwords by removing the added salts.
+
+### Features:
+- **Password Encryption**: Encrypts passwords using a custom character set and key mapping.
+- **Password Decryption**: Decrypts encrypted passwords by removing salts and reversing the encryption process.
+- **Custom Salts**: Adds extra obfuscation to encrypted passwords using a customizable salt list.
+
+### Function Documentation:
+
+#### `salts()`
+**Purpose**: Generates a list of salt values used to obfuscate encrypted passwords.
+**Returns**: 
+- A list of strings, each representing a salt value.
+
+#### `characters()`
+**Purpose**: Provides a list of all possible characters that can be used in passwords.
+**Returns**: 
+- A list of characters including digits, letters, and punctuation.
+
+#### `chars_keys()`
+**Purpose**: Provides a list of keys corresponding to the characters defined in `characters()`.
+**Returns**: 
+- A list of keys.
+
+#### `encrypter()`
+**Purpose**: Encrypts a user-provided password using a defined character set and adds salt to the encrypted password.
+**Process**:
+1. Prompts user to enter a password to encrypt.
+2. Encrypts the password using character mapping.
+3. Adds salt to the encrypted password.
+
+#### `decrypter()`
+**Purpose**: Decrypts a user-provided hashed value by removing salt and reversing the encryption process.
+**Process**:
+1. Prompts user to enter a hashed password.
+2. Removes salt from the hashed password.
+3. Decrypts the resulting string.
+
+## Example
+
+**Encryption Example**:
+
+Enter password to encrypt: Abc123
+Encrypted password: ,V0`{v
+Password after adding salt: 7cHlk.o93BI,V0o9YNfhsSUBX`{vlk.9i3BrTrCS8mMqBg
+
+
+**Decryption Example**:
+
+Enter hashed value to Decrypt: 7cHlk.o93BI,V0o9YNfhsSUBX`{vlk.9i3BrTrCS8mMqBg
+Password after removing salt: ,V0`{v
+Decrypted password: Abc123
