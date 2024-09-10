@@ -82,14 +82,14 @@ This repository contains a Python-based system for encrypting and decrypting pas
 
 #### `encrypter()`
 **Purpose**: Encrypts a user-provided password using a defined character set and adds salt to the encrypted password.
-**Process**:
+Process:
 1. Prompts user to enter a password to encrypt.
 2. Encrypts the password using character mapping.
 3. Adds salt to the encrypted password.
 
 #### `decrypter()`
 **Purpose**: Decrypts a user-provided hashed value by removing salt and reversing the encryption process.
-**Process**:
+Process:
 1. Prompts user to enter a hashed password.
 2. Removes salt from the hashed password.
 3. Decrypts the resulting string.
@@ -98,13 +98,13 @@ This repository contains a Python-based system for encrypting and decrypting pas
 
 **Encryption Example**:
 
-Enter password to encrypt: Abc123
-Encrypted password: ,V0`{v
-Password after adding salt: 7cHlk.o93BI,V0o9YNfhsSUBX`{vlk.9i3BrTrCS8mMqBg
+Enter password to encrypt: abc456
+Encrypted password: eV0!$z
+Password after adding salt: 2jsa2aNVa7hBeV0NVaD1Bka8!$za2a2qB1.AlauA7cHOFI
 
 
 **Decryption Example**:
 
-Enter hashed value to Decrypt: 7cHlk.o93BI,V0o9YNfhsSUBX`{vlk.9i3BrTrCS8mMqBg
-Password after removing salt: ,V0`{v
-Decrypted password: Abc123
+Enter hashed value to Decrypt: 2jsa2aNVa7hBeV0NVaD1Bka8!$za2a2qB1.AlauA7cHOFI
+Password after removing salt: eV0!$z
+Decrypted password: abc456
